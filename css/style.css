@@ -1,0 +1,250 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: "idroid";
+  src: url(../fonts/idroid.otf) format("opentype");
+}
+
+:root {
+  --green001: #50b37c;
+  --green002: #1a5c38;
+  --green003: #4dbfa3;
+  --green004: #39bf4d;
+  --green005: #51c975;
+  --bugdroid: #96c13e;
+
+  --fonte-header: "Bebas Neue", serif;
+  --fonte-titulos: "idroid", serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--green004, transparent));
+}
+
+header {
+  min-height: 40px;
+  background-color: black;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+header > h1 {
+  text-align: center;
+  padding: 5px;
+  color: var(--green002);
+  font-family: var(--fonte-header);
+  --fonte-titulos: "idroid", serif;
+  font-size: 3em;
+  text-shadow: 1px 4px 0px rgba(0, 0, 0, 0.292);
+}
+
+header > p {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.292);
+}
+
+nav {
+  padding: 9px;
+  text-align: center;
+}
+
+nav > a {
+  margin-right: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--green002);
+  font-size: 1.2em;
+  font-weight: light;
+  font-family: var(--fonte-titulos);
+}
+
+nav > a:hover {
+  color: white;
+  background-color: var(--green002);
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+nav li {
+  display: inline;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 5px;
+  color: white;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li:hover {
+  background-color: var(--green003);
+  border-radius: 5px;
+  color: white;
+  transition: 500ms;
+}
+
+main {
+  background-color: white;
+  min-width: 320px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: -20px;
+  padding: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.451);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tenor-gif-embed {
+  margin: auto;
+  max-width: 320px;
+}
+
+article > h1 {
+  font-family: "idroid", serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  color: var(--green002);
+}
+
+article > h2 {
+  font-family: "idroid", serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: var(--green002);
+  background-image: linear-gradient(to left, var(--green004), transparent);
+}
+
+article > p {
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 2em;
+  margin: 15px 0px;
+}
+
+article strong {
+  font-size: 1.1em;
+  color: var(--green002);
+  font-weight: bold;
+}
+
+article a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 3px;
+}
+
+article a::after {
+  content: "\1F517";
+}
+
+article a:hover {
+  background-color: var(--green002);
+  color: var(--green004);
+  text-decoration: underline;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+article > img {
+  width: 100%;
+}
+
+picture > img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+#dandroids {
+  width: 70%;
+}
+
+.small {
+  max-width: 350px;
+}
+
+#video {
+  background-color: black;
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.451);
+}
+
+#video > iframe {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+aside {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.529);
+}
+
+aside > h3 {
+  color: var(--green004);
+  font-size: 1.5em;
+  font-family: "idroid";
+  font-weight: normal;
+  background-color: black;
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 5px 5px 0 0;
+}
+
+aside > p {
+  padding-top: 15px;
+  text-align: justify;
+  text-indent: 20px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+aside ul {
+  padding: 10px;
+  list-style-position: inside;
+  list-style-type: "\2714";
+  columns: 2;
+}
+
+aside li {
+  color: black;
+  font-size: 1.2em;
+}
+
+footer {
+  padding: 5px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.481);
+  text-align: center;
+}
+
+footer > p > a {
+  text-decoration: none;
+  color: white;
+}
